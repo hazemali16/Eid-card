@@ -36,7 +36,7 @@ function createCard() {
         ctx.textAlign = "center";
          // White text color
         ctx.fillText(inputName, 260, 310);
-        ctx.fillText("Created by Hazem Ali", 260, 340);
+        // ctx.fillText("Created by Hazem Ali", 260, 340);
 
         // Convert canvas to data URL (PNG format)
         const dataUrl = canvas.toDataURL("image/png");
