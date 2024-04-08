@@ -34,6 +34,9 @@ function createCard() {
         ctx.font = "24px 'Cairo', sans-serif";
         ctx.fillStyle = "#e7c479";
         ctx.textAlign = "center";
+        ctx.font = "bold 24px 'Cairo', sans-serif";
+        
+        ctx.fillText("انا حازم", (cardWidth / 2), cardHeight - (cardHeight / 1.75));
          // White text color
         ctx.fillText(inputName, (cardWidth / 2), cardHeight - (cardHeight / 4));
         // ctx.fillText("Created by Hazem Ali", 260, 340);
