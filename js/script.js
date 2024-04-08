@@ -35,7 +35,7 @@ function createCard() {
         ctx.fillStyle = "#e7c479";
         ctx.textAlign = "center";
          // White text color
-        ctx.fillText(inputName, 260, 310);
+        ctx.fillText(inputName, (cardWidth / 2), cardHeight - (cardHeight / 4));
         // ctx.fillText("Created by Hazem Ali", 260, 340);
 
         // Convert canvas to data URL (PNG format)

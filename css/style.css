@@ -1,8 +1,11 @@
 body {
+    box-sizing: border-box;
+    margin: 0;
     background-color: #f0f0f0;
+    height: 100vh;
     text-align: center;
     padding: 20px;
-    background-image: url(images/body.png);
+    background-image: url(../images/body.png);
     background-size: cover;
     font-family: 'Cairo', sans-serif;
     font-optical-sizing: auto;
@@ -10,9 +13,12 @@ body {
 .card {
     position: relative;
     border-radius: 10px;
-    width: fit-content;
+    width: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto 40px auto;
+}
+.card img {
+    max-width: 100%;
 }
 .background-image {
     border-radius: 10px;
@@ -109,4 +115,18 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 676px) {
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    #nameInput {
+        width: calc(100% - 20px);
+        margin-left: 0;
+    }
+    .card {
+        width: 400px;
+    }
 }
